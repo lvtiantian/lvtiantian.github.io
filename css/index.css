@@ -219,6 +219,10 @@ body{
 	margin:0 0.5%;
 	padding:0 0.5%;
 }
+.main-content p{
+	font-family: "黑体";
+	font-size: 16px;
+}
 /*作品展示页面*/
 .grid{
 	
