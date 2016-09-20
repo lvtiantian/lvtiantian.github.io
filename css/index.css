@@ -6,7 +6,7 @@ body{
 /*	background-attachment: fixed;*/
 	background-size: cover;
 }
-/*页头姓名*/
+/*椤靛ご濮撳悕*/
 #name{
 	margin-top:0;
 }
@@ -19,7 +19,7 @@ body{
 #name>div img{
 	width:100%;
 }
-/*页头/导航*/
+/*椤靛ご/瀵艰埅*/
 #head-top{
 	margin-top:30px;
 }
@@ -87,6 +87,7 @@ body{
 	width:100%;
 	font-size:2em;
 	color:#fff;
+	font-family:"榛戜綋";
 }
 .navbar-inverse .navbar-toggle:focus,.navbar-inverse .navbar-toggle:hover{
 	background:none;
@@ -136,6 +137,7 @@ body{
 	}
 	#Inav .navbar-nav>li>a span{
 		top:30%;
+		font-family:"榛戜綋";
 	}
 }
 @media(max-width:767px){
@@ -201,11 +203,13 @@ body{
 		font-size:0.8em;
 	}
 }
-/*主体内容*/
+/*涓讳綋鍐呭*/
 .main-container{
 	overflow:hidden;
 	padding:0;
 	margin-top:10px;
+	width:100%;
+	margin:0;
 }
 #slider{
 	position: relative;
@@ -219,11 +223,26 @@ body{
 	margin:0 0.5%;
 	padding:0 0.5%;
 }
-.main-content p{
-	font-family: "黑体";
-	font-size: 16px;
+.main-content:first-child p,.main-content:last-child p{
+	text-align:center;
+	line-height:30px;
 }
-/*作品展示页面*/
+.main-content:nth-child(3){
+	background:none;
+
+}
+.main-content>div>p{
+	font-family: "榛戜綋";
+	font-size: 16px;
+	text-align:left;
+	line-height:25px;
+	padding:30px;
+	width:60%;
+	margin:0 auto;
+	background:rgba(255,255,255,0.3);
+	border-radius:5px;
+}
+/*浣滃搧灞曠ず椤甸潰*/
 .grid{
 	
 }
@@ -280,7 +299,7 @@ body{
 	font-size: 0.68em;
 }
 figure.effect-bubba {
-	background: #9e5406;
+	background: #989898;
 }
 
 figure.effect-bubba img {
