@@ -78,16 +78,14 @@ body{
 	background-size: cover;
 	padding-bottom:0;
 	margin-bottom:0;
-
 }
 .navbar-inverse .navbar-toggle p span{
 	position:absolute;
 	top:30%;
-	left:0%;
+	left:0;
 	width:100%;
 	font-size:2em;
 	color:#fff;
-	font-family:"黑体";
 }
 .navbar-inverse .navbar-toggle:focus,.navbar-inverse .navbar-toggle:hover{
 	background:none;
@@ -115,8 +113,29 @@ body{
 	.shake{
 		transform-origin:50% 0%;
 		-webkit-animation:rotate 0.8s linear 2;
+		-moz-animation:rotate 0.8s linear 2;
+		-o-animation:rotate 0.8s linear 2;
+		-ms-animation:rotate 0.8s linear 2;
 	}
 	@-webkit-keyframes rotate{
+		0% {-webkit-transform:rotateZ(0deg);}
+		25% {-webkit-transform:rotateZ(10deg);}
+		75% {-webkit-transform:rotateZ(-10deg);}
+		100% {-webkit-transform:rotateZ(0deg);}
+	}
+	@-moz-keyframes rotate{
+		0% {-webkit-transform:rotateZ(0deg);}
+		25% {-webkit-transform:rotateZ(10deg);}
+		75% {-webkit-transform:rotateZ(-10deg);}
+		100% {-webkit-transform:rotateZ(0deg);}
+	}
+	@-o-keyframes rotate{
+		0% {-webkit-transform:rotateZ(0deg);}
+		25% {-webkit-transform:rotateZ(10deg);}
+		75% {-webkit-transform:rotateZ(-10deg);}
+		100% {-webkit-transform:rotateZ(0deg);}
+	}
+	@-ms-keyframes rotate{
 		0% {-webkit-transform:rotateZ(0deg);}
 		25% {-webkit-transform:rotateZ(10deg);}
 		75% {-webkit-transform:rotateZ(-10deg);}
@@ -243,13 +262,9 @@ body{
 	border-radius:5px;
 }
 /*作品展示页面*/
-.grid{
-	
-}
 .grid h2{
-		font-size:1.4em;
-	}
-
+	font-size:1.4em;
+}
 .grid figure {
 	position: relative;
 	overflow: hidden;
@@ -280,20 +295,12 @@ body{
 	font-size: 1.25em;
 }
 
-/*.grid figure figcaption::before,*/
-/*.grid figure figcaption::after {*/
-/*	pointer-events: none;*/
-/*}*/
-
 .grid figure h2 span {
 	font-weight: 800;
 }
-
-.grid figure h2,
-.grid figure p {
+.grid figure h2, .grid figure p {
 	margin: 0;
 }
-
 .grid figure p {
 	letter-spacing: 1px;
 	font-size: 0.68em;
@@ -308,11 +315,9 @@ figure.effect-bubba img {
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
-
 figure.effect-bubba:hover img {
 	opacity: 0.4;
 }
-
 figure.effect-bubba figcaption::before,
 figure.effect-bubba figcaption::after {
 	position: absolute;
@@ -325,7 +330,6 @@ figure.effect-bubba figcaption::after {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
-
 figure.effect-bubba figcaption::before {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
